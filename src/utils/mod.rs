@@ -7,7 +7,7 @@ pub mod config;
 
 pub fn load_config() -> VarIntConfig {
     // 設定ファイルからの読み込みを試行
-    if let Ok(mut file) = File::open("configs/varint.toml") {
+    if let Ok(mut file) = File::open("utils/varint.toml") {
         let mut contents = String::new();
         if file.read_to_string(&mut contents).is_ok() {
             if let Ok(config) = toml::from_str(&contents) {

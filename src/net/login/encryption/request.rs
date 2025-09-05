@@ -1,8 +1,8 @@
-use bytes::BytesMut;
-use crate::net::protocol::{Packet, PacketError};
-use crate::varint::utils::{read_string, write_string, write_varint};
 use crate::net::login::encryption::EncryptionKeyPair;
+use crate::net::protocol::Packet;
+use crate::varint::utils::{write_string, write_varint};
 use crate::ServerError;
+use bytes::BytesMut;
 
 #[derive(Debug, Clone)]
 pub struct EncryptionRequest {
