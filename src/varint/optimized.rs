@@ -176,4 +176,5 @@ mod tests {
         varint.write_varint(&mut buf, i32::MAX);
         assert_eq!(varint.read_varint(&mut buf), Some(i32::MAX));
     }
+    //コミット用コメント
 }
