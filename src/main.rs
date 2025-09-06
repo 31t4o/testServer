@@ -14,7 +14,7 @@ async fn main() -> Result<(), Box<dyn error::Error>> {
         error!("サーバーの起動に失敗しました: {}", e);
         return Err(e.into());
     }
-
+3
     Ok(())
 }
-//github commit確認用コメント
+//github commit test case 1 確認用コメント
